@@ -1,4 +1,4 @@
-import SwiftUI
+import Foundation
 
 // TODO: Declare any additional structs, classes, enums, or protocols here!
 
@@ -42,10 +42,6 @@ struct YourGame: AdventureGame {
     /// Note that this does *not* display a game over message - it merely disables
     /// the buttons and forces the user to reset.
     ///
-    /// **Sidenote:** context.write() supports AttributedString for rich text formatting.
-    /// Consult the [homework instructions](https://www.seas.upenn.edu/~cis1951/assignments/hw/hw1)
-    /// for guidance.
-    ///
     /// - Parameters:
     ///   - input: The line the user typed.
     ///   - context: The object you use to write output and end the game.
@@ -57,4 +53,4 @@ struct YourGame: AdventureGame {
 
 // Leave this line in - this line sets up the UI you see on the right.
 // Update this if you rename your AdventureGame implementation.
-YourGame.display()
+YourGame.run()

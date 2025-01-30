@@ -22,8 +22,8 @@ class AdventureGameModel<Game: AdventureGame>: AdventureGameContext, ObservableO
     /// The list of lines being displayed in the output.
     @Published private(set) var lines = [AdventureGameLine]()
     
-    public func write(_ attributedString: AttributedString) {
-        lines.append(AdventureGameLine(content: attributedString))
+    public func write(_ string: String) {
+        lines.append(AdventureGameLine(content: AttributedString(string)))
         
         // Prevent lines from getting too long
         let threshold = 1000

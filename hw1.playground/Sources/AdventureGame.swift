@@ -22,9 +22,9 @@ public protocol AdventureGame {
 
 /// An object that handles displaying output and ending the game.
 public protocol AdventureGameContext {
-    /// Adds the given line of rich text to the output.
-    /// - Parameter attributedString: Rich text string to display.
-    func write(_ attributedString: AttributedString)
+    /// Adds the given line of text to the output.
+    /// - Parameter attributedString: String to display in the line.
+    func write(_ string: String)
     
     /// Ends the game immediately.
     ///
@@ -34,15 +34,7 @@ public protocol AdventureGameContext {
 
 public extension AdventureGame {
     /// Sets up a UI and runs the game in the playground.
-    static func display() {
+    static func run() {
         PlaygroundPage.current.setLiveView(AdventureGameView<Self>())
-    }
-}
-
-public extension AdventureGameContext {
-    /// Adds the given line to the output, without rich text formatting.
-    /// - Parameter string: String to display.
-    func write(_ string: String) {
-        write(AttributedString(string))
     }
 }

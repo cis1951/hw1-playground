@@ -30,9 +30,9 @@
 
 *(insert a brief explanation)*
 
-**What extra credit features did you implement, if any?**
+**Did you implement any extra features you're proud of and want to show off?**
 
-* *(if no extra credit, write "None")*
+* *(if nothing extra, write "None")*
 
 ## Endings
 
